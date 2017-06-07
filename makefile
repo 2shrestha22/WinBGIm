@@ -4,7 +4,7 @@ clean:
 	rm *.o  
 	rm libbgi.a
 
-CPPFLAGS = -c -O3 -fno-rtti -fno-exceptions -m32
+CPPFLAGS = -c -O3 -fno-rtti -fno-exceptions
 
 drawing.o: drawing.cxx winbgim.h winbgitypes.h
 	g++ $(CPPFLAGS) drawing.cxx
