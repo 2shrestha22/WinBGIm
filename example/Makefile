@@ -7,3 +7,5 @@ helloworld:
 	
 clean:
 	rm helloworld.exe
+
+.PHONY: clean

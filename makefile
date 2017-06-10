@@ -1,10 +1,16 @@
+# Just run `make` to build. you'll get a `libbgi.a` and a `graphics.h`
+# If you need the `bgi` command-line build helper, run `make all` or `make bgi.exe`
+CPPFLAGS = -c -O3 -fno-rtti -fno-exceptions
+
 libbgi.a: drawing.o misc.o mouse.o palette.o text.o winbgi.o winthread.o file.o dibutil.o winbgim.h graphics.h
 	ar -rv libbgi.a drawing.o misc.o mouse.o palette.o text.o winthread.o winbgi.o file.o dibutil.o
+
+all: libbgi.a bgi.exe
+	@echo "DONE"
+
 clean:
 	rm *.o  
 	rm libbgi.a
-
-CPPFLAGS = -c -O3 -fno-rtti -fno-exceptions
 
 drawing.o: drawing.cxx winbgim.h winbgitypes.h
 	g++ $(CPPFLAGS) drawing.cxx
@@ -40,3 +46,4 @@ graphics.h: winbgim.h
 bgi.exe: bgi.cxx
 	g++ bgi.cxx -o bgi.exe
 
+.PHONY: clean all
