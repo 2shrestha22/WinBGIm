@@ -3,3 +3,7 @@
 *.a
 *.o
 *.exe
+
+# Folders
+
+.vscode/
