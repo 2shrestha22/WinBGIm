@@ -43,10 +43,11 @@ For API reference, refer to `doc` folder and that's it!
 You can found the original version of WinBGIm (also is the first commit of this repo) on it's project homepage, here are some links that maybe useful to you.
 
  - Originally project homepage: [WinBGIm - Borland BGI emulation for MingW](http://winbgim.codecutter.org/)
- - WinBGIm documents: [Borland Graphics Interface (BGI) for Windows](http://www.cs.colorado.edu/~main/cs1300/doc/bgi/index.html)
- - The latest publicly available source code is available from [Michael Main's BGI directory](http://www.cs.colorado.edu/~main/bgi/source/)
+ - The original WinBGIm documents: [Borland Graphics Interface (BGI) for Windows](http://www.cs.colorado.edu/~main/cs1300/doc/bgi/index.html)
+ - The latest publicly available source code of the original WinBGIm library is available from [Michael Main's BGI directory](http://www.cs.colorado.edu/~main/bgi/source/)
  - [CSCI 1300 Lab Manual](http://www.cs.colorado.edu/~main/bgi/cs1300/lab/) also contains something about WinBGIm.
  - [Koolplot](http://koolplot.codecutter.org/), a very simple-to-use 2D graph plotting library based on WinBGIm.
+ - Wanna using BGI under other platform like x11 for linux? Try [SDL_bgi / libxbgi](http://libxbgi.sourceforge.net/).
 
 ## License
 
